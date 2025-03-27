@@ -7,9 +7,11 @@ class baitap1Expand extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Expanded(
             child: Row(
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Expanded(
                   child: Container(
