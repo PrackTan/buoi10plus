@@ -9,6 +9,7 @@ import 'package:buoi10/column.dart';
 import 'package:buoi10/baitap-expand.dart';
 import 'package:buoi10/baitap-columnRow.dart';
 import 'package:buoi10/Layout1/widget-card.dart' as layout;
+import 'package:buoi10/Layout1/widget-phone.dart' as phone;
 
 void main() {
   runApp(DevicePreview(
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         ),
         // backgroundColor: Colors.blue,
         body: SafeArea(
-          child: layout.CardWidget(),
+          child: phone.PhoneWidget(),
         ),
       ),
     );
