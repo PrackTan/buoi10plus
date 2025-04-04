@@ -13,6 +13,8 @@ class PhoneWidget extends StatelessWidget {
 Widget _PhoneWidget(String numberPhone) {
   return Center(
     child: Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           numberPhone,
@@ -24,6 +26,8 @@ Widget _PhoneWidget(String numberPhone) {
         ),
         const SizedBox(height: 100),
         Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -264,6 +268,42 @@ Widget _PhoneWidget(String numberPhone) {
                 ),
               ],
             ),
+            const SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [
+                    Icon(FontAwesomeIcons.star),
+                    Text('Yêu thích'),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(FontAwesomeIcons.clock),
+                    Text('Cuối cùng gọi'),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(FontAwesomeIcons.phone),
+                    Text('Gọi lại'),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(FontAwesomeIcons.tableCells),
+                    Text('Bảng'),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Icon(FontAwesomeIcons.envelope),
+                    Text('Email'),
+                  ],
+                )
+              ],
+            )
           ],
         ),
       ],

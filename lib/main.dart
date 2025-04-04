@@ -10,6 +10,8 @@ import 'package:buoi10/baitap-expand.dart';
 import 'package:buoi10/baitap-columnRow.dart';
 import 'package:buoi10/Layout1/widget-card.dart' as layout;
 import 'package:buoi10/Layout1/widget-phone.dart' as phone;
+import 'package:buoi10/Layout1/widget-calculator.dart' as calculator;
+import 'package:buoi10/Layout1/widget-card-profile.dart' as card;
 
 void main() {
   runApp(DevicePreview(
@@ -29,11 +31,11 @@ class MyApp extends StatelessWidget {
       builder: DevicePreview.appBuilder,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Profile Card'),
+          title: const Text('Profile Card & Favorite Card'),
         ),
         // backgroundColor: Colors.blue,
         body: SafeArea(
-          child: phone.PhoneWidget(),
+          child: card.MyWidget(),
         ),
       ),
     );
